@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // Custom colors for the AfriT platform
+        afrit: {
+          blue: '#1A365D',
+          orange: '#F97316',
+          yellow: '#FBBF24',
+          turquoise: '#0EA5E9',
+          burgundy: '#9F1239',
+          green: '#059669',
+          sand: '#F5F5DC',
+          slate: '#64748B',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +96,20 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'float': {
+          '0%, 100%': {
+            transform: 'translateY(0)',
+          },
+          '50%': {
+            transform: 'translateY(-10px)',
+          },
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'float': 'float 3s ease-in-out infinite',
 			}
 		}
 	},
